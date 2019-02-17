@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+html {
+	background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+	font: 18px 'Montserrat', sans-serif;
+}
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.choice-box {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.choice-btn {
+	background: none;
+	border: none;
+	border-radius: 50%;
+	font-size: 4rem;
+	width: 120px;
+	height: 120px;
+	line-height: 5px;
+	transition: 0.2s;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.choice-btn:hover {
+	border: 5px solid wheat;
+	background-color: #5fbd9c;
+	transform: scale(1.1);
+}
+
+/* add class active when clicked */
+.active {
+	border: 5px solid wheat;
+	background-color: #5fbd9c;
+	transform: scale(1.1);
+}
+
+.start-btn {
+	display: block;
+	margin: 20px auto;
+	background: none;
+	border: none;
+	outline: none;
+	font: bold 1rem 'Montserrat';
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.start-btn:hover {
+	transform: scale(1.2);
+}
+
+.score-box {
+	width: 100%;
+}
+
+.comp {
+	padding: 10px;
+	font-size: 0.5rem;
+	text-align: center;
+	float: right;
+	margin-right: 5%;
+}
+
+.comp p {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.player {
+	padding: 10px;
+	font-size: 0.5rem;
+	text-align: center;
+	float: left;
+	margin-left: 5%;
+}
+
+.player p {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.display {
+	display: none;
+}
+
+.display-result {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.btn-group {
+	margin: 10px 10px;
+}
+
+.btn-group button {
+	background: none;
+	border: 3px solid white;
+	border-radius: 10px;
+	margin: 10px 10px;
+	padding: 5px;
+	outline: none;
+	cursor: pointer;
+	font: bold 0.6rem 'Montserrat', sans-serif;
+	transition: 0.2s;
+}
+
+.btn-group button:hover {
+	transform: scale(1.2);
+}
+
+.result {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.player-choice,
+.comp-choice {
+	background: none;
+	border: none;
+	font-size: 4rem;
+}
+
+/* @media screen and (min-width: 414px), (min-height: 700px) {
+	.choice-btn {
+		font-size: 6rem;
+		width: 180px;
+		height: 180px;
+	}
+
+	.start-btn {
+		font-size: 1.2rem;
+	}
+	
+	.player-choice, .comp-choice {
+		font-size: 6rem;
+	}
+} */
+
+@media screen and (min-width: 768px),
+(min-height: 1024px) {
+	.choice-btn {
+		font-size: 8rem;
+		width: 200px;
+		height: 200px;
+	}
+
+	.comp h1,
+	.comp p,
+	.player h1,
+	.player p {
+		font-size: 2rem;
+	}
+
+	.start-btn {
+		font-size: 1.5rem;
+	}
+
+	.group-choice {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.group-choice * {
+		margin: 0 2rem;
+	}
+
+	.group-choice .result {
+		justify-self: center;
+		align-self: center;
+	}
+
+	.player-choice,
+	.comp-choice {
+		font-size: 10rem;
+	}
+
+	.btn-group {
+		margin-top: 30px;
+	}
+
+	.btn-group button {
+		padding: 10px;
+		font-size: 1rem;
+	}
+}
