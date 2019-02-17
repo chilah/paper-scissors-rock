@@ -57,7 +57,7 @@ function letsWarAgain() {
 
 // reset button
 reset.addEventListener('click', resetWar);
-// reset every value
+// reset every single value
 function resetWar() { 
 	choiceBox.style.display = 'inline';
 	display.style.display = 'none';
