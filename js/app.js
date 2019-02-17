@@ -10,8 +10,8 @@ const playerScore = document.getElementById('playerScore'),
 	displayPlayer = document.getElementById('displayPlayer'),
 	displayComp = document.getElementById('displayComp');
 
-var playerWin = 0;
-var compWin = 0;
+let playerWin = 0;
+let compWin = 0;
 const emoji = { paper: '🖐', scissors: '✌', rock: '✊' };
 
 // let the war begin~~~~
